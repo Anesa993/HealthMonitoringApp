@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/diet"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/diet"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HealthyMe"
+        tools:targetApi="31">
+        <activity
+            android:name=".Waterintake.waterintake"
+            android:theme="@style/Theme.DrinkWaterReminder"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".foodsuggestion"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".vediosession.videowebview"
+            android:exported="false"
+            android:theme="@style/Theme.action">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".vediosession.vediosessionScreen"
+            android:exported="false"
+            android:theme="@style/Theme.action">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Camscanner.CamScanner"
+            android:exported="false"
+            android:label="Barcode Scanner"
+            android:theme="@style/Theme.action">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".excersie.excercise"
+            android:exported="false"
+            android:label="Excercises"
+            android:theme="@style/Theme.action">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".User.CaloriesCalculate"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".User.HistoryCaloriesIntake"
+            android:exported="false"
+            android:screenOrientation="locked">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".User.HistorySugarLevel"
+            android:exported="false"
+            android:screenOrientation="locked">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".User.HistoryBloodPressure"
+            android:exported="false"
+            android:screenOrientation="locked">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".User.InfoDetails"
+            android:exported="false"
+            android:screenOrientation="locked">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".User.UpdateProfile"
+            android:exported="false"
+            android:screenOrientation="locked">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".User.AddSugarLevel"
+            android:exported="false"
+            android:screenOrientation="locked">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".User.AddCaloriesIntake"
+            android:exported="false"
+            android:screenOrientation="locked">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".User.AddBloodPressure"
+            android:exported="false"
+            android:screenOrientation="locked">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:screenOrientation="locked"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".User.UserDashboard"
+            android:exported="false"
+            android:screenOrientation="locked">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Common.OnBoarding"
+            android:exported="false"
+            android:screenOrientation="locked">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Common.WelcomeScreen"
+            android:exported="false"
+            android:screenOrientation="locked">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".User.Login"
+            android:exported="false"
+            android:screenOrientation="locked">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".User.Register"
+            android:exported="false"
+            android:screenOrientation="locked">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Common.SplashScreen"
+            android:exported="true"
+            android:screenOrientation="locked">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".excersie.receiveexcercise"
+            android:label="Excercises"
+            android:theme="@style/Theme.action" />
+        <activity android:name=".caloriescounter.DailyPage" />
+        <activity android:name=".caloriescounter.DisplayHistory" />
+        <activity android:name=".caloriescounter.History" />
+        <activity android:name=".caloriescounter.Homepage" />
+        <activity android:name=".caloriescounter.ManualAdd" />
+        <activity android:name=".caloriescounter.SelectFood" />
+        <activity android:name=".caloriescounter.MacrosCalculator" />
+        <activity
+            android:name=".caloriescounter.ApiActivity"
+            android:label="Food Search"
+            android:theme="@style/Theme.action" />
+        <activity
+            android:name=".Camscanner.ScanBarcode"
+            android:theme="@style/Theme.action" />
+        <activity android:name="com.example.healthyme.Waterintake.NotificationReminder"
+            android:theme="@style/Theme.DrinkWaterReminder"/>
+        <activity android:name="com.example.healthyme.Waterintake.Pi"
+            android:theme="@style/Theme.DrinkWaterReminder"/>
+        <activity android:name="com.example.healthyme.Waterintake.List"
+            android:theme="@style/Theme.DrinkWaterReminder"/>
+        <activity android:name="com.example.healthyme.Waterintake.CupsManager"
+            android:theme="@style/Theme.DrinkWaterReminder"/>
+        <receiver android:name=".Waterintake.ReminderBroadcast" />
+    </application>
+
+</manifest>
